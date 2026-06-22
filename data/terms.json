@@ -55,6 +55,22 @@
     "service": "전체",
     "note": "'기존 비밀번호' → '현재 비밀번호'로 변경"
   },
+    {
+    "standard": "홈",
+    "forbidden": ["메인", "main", "home"],
+    "english": "Home",
+    "category": "UI 공통",
+    "service": "전체",
+    "note": "홈으로 이동 버튼: 'Go to Home' 또는 'Home'"
+  },
+  {
+    "standard": "계정 관리",
+    "forbidden": ["내 계정", "계정 설정", "Manage account"],
+    "english": "Manage account",
+    "category": "계정",
+    "service": "전체",
+    "note": "한컴계정과 한컴닷컴 계정의 맥락 구분 필요. 계정 통합 시나리오에서 혼용 주의"
+  },
   {
     "standard": "알림",
     "forbidden": ["notification", "노티", "공지"],
@@ -78,6 +94,94 @@
     "category": "UI 공통",
     "service": "전체",
     "note": "'찾기'는 문서 내 찾기(Find)에만 사용"
+  },
+    {
+    "standard": "고객지원",
+    "forbidden": ["고객센터", "Customer center", "고객 지원"],
+    "english": "Customer support",
+    "category": "UI 공통",
+    "service": "전체",
+    "note": "'고객센터' 혼용 금지. 오류 메시지 내 연결 시 '고객지원으로 문의해 주세요.' 사용"
+  },
+  {
+    "standard": "공지사항",
+    "forbidden": ["Notice", "공지", "안내사항"],
+    "english": "Notices",
+    "category": "UI 공통",
+    "service": "전체",
+    "note": "복수형 Notices 고정. Notice(단수) 혼용 금지"
+  },
+  {
+    "standard": "미리 보기",
+    "forbidden": ["미리보기", "preview"],
+    "english": "Preview",
+    "category": "UI 공통",
+    "service": "전체",
+    "note": "두 단어 띄어쓰기 유지. '미리보기' 붙여쓰기 금지"
+  },
+  {
+    "standard": "더 보기",
+    "forbidden": ["더보기", "View more", "See more"],
+    "english": "View more / See more",
+    "category": "UI 공통",
+    "service": "전체",
+    "note": "버튼 레이블은 View more, 콘텐츠 내부 펼침은 See more 구분"
+  },
+  {
+    "standard": "복제",
+    "forbidden": ["복사", "Duplicate", "copy"],
+    "english": "Duplicate",
+    "category": "UI 공통",
+    "service": "전체",
+    "note": "문서·설문 복제는 Duplicate. 링크 복사는 Copy Link. 혼용 금지"
+  },
+  {
+    "standard": "완료",
+    "forbidden": ["done", "finish", "종료"],
+    "english": "Done",
+    "category": "UI 공통",
+    "service": "전체",
+    "note": "다중 단계 완료 시점. 단일 행동 완료는 성공 토스트로 처리"
+  },
+  {
+    "standard": "적용",
+    "forbidden": ["apply", "적용하기"],
+    "english": "Apply",
+    "category": "UI 공통",
+    "service": "전체",
+    "note": "설정 변경 적용 버튼. '적용하기' 동사형도 Apply로 통일"
+  },
+  {
+    "standard": "나가기",
+    "forbidden": ["나오기", "종료", "exit"],
+    "english": "Leave / Exit",
+    "category": "UI 공통",
+    "service": "전체",
+    "note": "편집 이탈 확인 시 Leave, 앱 종료 맥락은 Exit"
+  },
+  {
+    "standard": "시작하기",
+    "forbidden": ["Get Started", "시작", "start"],
+    "english": "Start now",
+    "category": "UI 공통",
+    "service": "전체",
+    "note": "첫 진입 CTA. 'Get Started' 혼용 금지"
+  },
+  {
+    "standard": "다시 시도",
+    "forbidden": ["Retry", "재시도", "다시시도"],
+    "english": "Try again",
+    "category": "시스템",
+    "service": "전체",
+    "note": "오류 메시지 하단 CTA 버튼. 'Retry' 혼용 금지"
+  },
+  {
+    "standard": "2단계 인증",
+    "forbidden": ["추가 보안 인증", "2FA", "이중 인증"],
+    "english": "Two-factor authentication (2FA)",
+    "category": "인증",
+    "service": "전체",
+    "note": "서비스 정책서 용어와 일치 필요. '추가 보안 인증' 혼용 금지"
   },
   {
     "standard": "삭제",
@@ -214,6 +318,78 @@
     "category": "과금",
     "service": "전체",
     "note": "외래어이지만 사용자 인지도가 높아 허용"
+  },
+    {
+    "standard": "자동결제",
+    "forbidden": ["정기결제", "빌링", "auto pay"],
+    "english": "Auto payment",
+    "category": "과금",
+    "service": "전체",
+    "note": "사용자 대상 UI에서는 '자동결제' 통일. '정기결제'는 법률 문서에서만 허용. 빌링키 기반 자동 청구"
+  },
+  {
+    "standard": "간편결제",
+    "forbidden": ["원클릭 결제", "quick pay", "빠른결제"],
+    "english": "Simple payment",
+    "category": "과금",
+    "service": "전체",
+    "note": "카드·계좌 등록 후 인증 없이 결제하는 방식. '원클릭 결제' 혼용 금지"
+  },
+  {
+    "standard": "구독 해지",
+    "forbidden": ["구독 취소", "해지하기", "cancel subscription"],
+    "english": "Cancel subscription",
+    "category": "과금",
+    "service": "전체",
+    "note": "UI 레이블은 '구독 해지'. 법률 문서에서는 '해지'. '구독 취소'는 결제 취소와 혼동 유발로 금지"
+  },
+  {
+    "standard": "결제 수단",
+    "forbidden": ["지불 방법", "payment method", "카드 정보"],
+    "english": "Payment method",
+    "category": "과금",
+    "service": "전체",
+    "note": "카드·계좌·간편결제 등 통합 레이블. '카드 정보' 단독 표기 금지"
+  },
+  {
+    "standard": "구매 내역",
+    "forbidden": ["결제 내역", "주문 내역", "purchase history"],
+    "english": "Purchase history",
+    "category": "과금",
+    "service": "전체",
+    "note": "마이페이지 내 구매 이력 레이블. 서비스별 상세는 각 서비스 화면으로 링크 아웃"
+  },
+  {
+    "standard": "이용 내역",
+    "forbidden": ["사용 내역", "usage history"],
+    "english": "Usage history",
+    "category": "과금",
+    "service": "전체",
+    "note": "구독 서비스 이용 기록. '구매 내역'(Purchase history)과 구분하여 사용"
+  },
+  {
+    "standard": "쿠폰",
+    "forbidden": ["할인권", "coupon", "프로모코드"],
+    "english": "Coupon",
+    "category": "과금",
+    "service": "전체",
+    "note": "코드 입력형은 '쿠폰 코드'. 탈퇴 시 미사용 쿠폰 소멸 안내 필수"
+  },
+  {
+    "standard": "무료 이용",
+    "forbidden": ["무료", "free", "0원"],
+    "english": "Free",
+    "category": "과금",
+    "service": "전체",
+    "note": "무료 체험(Free trial)과 구분. 영구 무료 기능에는 'Free', 기간 한정은 'Free trial'"
+  },
+  {
+    "standard": "구매하기",
+    "forbidden": ["Purchase", "사기", "buy"],
+    "english": "Buy",
+    "category": "과금",
+    "service": "한컴타자",
+    "note": "아이템·필사책 구매 버튼. Purchase는 결제 완료 상태 명사로 사용 (Purchase completed)"
   },
   {
     "standard": "탈퇴",
@@ -598,6 +774,14 @@
     "category": "법률",
     "service": "전체",
     "note": "한글 문서에서는 '라이선스' 통일. '라이센스'(X)"
+  },
+  {
+    "standard": "오픈소스 라이선스",
+    "forbidden": ["Open Software License", "오픈 소스 라이선스"],
+    "english": "Open Source License",
+    "category": "법률",
+    "service": "전체",
+    "note": "Open Software License 대신 Open Source License로 통일"
   },
   {
     "standard": "양도",
